@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+header {
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.8rem darkgrey;
+  padding: 1rem 0; }
+  header .main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    header .main-navigation .navigation-icon {
+      width: 5rem; }
+      header .main-navigation .navigation-icon img {
+        width: 100%;
+        display: block; }
+    header .main-navigation ul {
+      display: flex;
+      align-items: center;
+      list-style: none; }
+      header .main-navigation ul li {
+        margin: 0 0.5rem; }
+        header .main-navigation ul li .navigation-link {
+          text-decoration: none;
+          color: black;
+          font-family: "Merriweather";
+          font-size: 1.4rem;
+          cursor: pointer;
+          padding: 1rem 1.5rem;
+          transition: 0.4s all; }
+          header .main-navigation ul li .navigation-link:hover {
+            background-color: blue;
+            color: white; }
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 6rem 1rem; }
+
+#form form {
+  margin-top: 8rem;
+  margin-bottom: 5rem; }
+  #form form .form-control {
+    margin: 0 auto; }
+    #form form .form-control input {
+      box-shadow: 0.1rem 0.1rem 0.8rem darkgrey;
+      border: 0;
+      outline: 0;
+      margin: 0 auto;
+      display: block;
+      width: 50%;
+      padding: 1.2rem 0.5rem; }
+
+#home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem; }
+
+#cocktail-list {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  row-gap: 3rem;
+  column-gap: 2rem;
+  margin: 0 auto; }
+  #cocktail-list .cocktail-card {
+    box-shadow: 0.1rem 0.1rem 0.8rem darkgrey;
+    transition: 0.4s all;
+    overflow: hidden; }
+    #cocktail-list .cocktail-card:hover {
+      box-shadow: 0.1rem 0.1rem 0.4rem darkgrey, 0.1rem 0.1rem 0.6rem darkgrey, 0.1rem 0.1rem 0.8rem darkgrey, 0.1rem 0.1rem 1rem darkgrey, 0.1rem 0.1rem 1.4rem darkgrey; }
+    #cocktail-list .cocktail-card .cocktail-image {
+      width: 100%;
+      overflow: hidden; }
+      #cocktail-list .cocktail-card .cocktail-image img {
+        width: 100%;
+        display: block; }
+    #cocktail-list .cocktail-card .cocktail-info {
+      padding: 1rem; }
+      #cocktail-list .cocktail-card .cocktail-info .cocktail-title {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+      #cocktail-list .cocktail-card .cocktail-info .cocktail-category {
+        background-color: lightgreen;
+        display: inline-block;
+        padding: 0.6rem 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        font-family: "Merriweather"; }
+      #cocktail-list .cocktail-card .cocktail-info .cocktal-instructions {
+        font-size: 1.2rem;
+        margin-bottom: 1rem; }
+      #cocktail-list .cocktail-card .cocktail-info .cocktail-details {
+        border: none;
+        background: none;
+        outline: none; }
+        #cocktail-list .cocktail-card .cocktail-info .cocktail-details .btn-link {
+          display: inline-block;
+          color: black;
+          padding: 1rem 3rem;
+          background-color: lightgreen;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 1rem; }
+          #cocktail-list .cocktail-card .cocktail-info .cocktail-details .btn-link:hover {
+            box-shadow: 0.1rem 0.1rem 0.8rem darkgrey; }
+
+#about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 2rem;
+  height: 60vh; }
+  #about .about-heading {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-family: "Merriweather"; }
+  #about .about-info {
+    width: 50%;
+    font-size: 1.4rem; }
+
+.no-data {
+  font-size: 2.5rem;
+  font-family: "Merriweather";
+  margin: 2rem 0; }
+
+#error-404 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh; }
+  #error-404 .error-heading {
+    font-size: 3.5rem;
+    font-family: "Merriweather";
+    margin-top: 4rem;
+    margin-bottom: 1rem; }
+  #error-404 .error-content {
+    font-size: 2rem;
+    font-family: "Merriweather";
+    margin-bottom: 2rem; }
+  #error-404 .btn-goBack {
+    border: none;
+    background: none;
+    outline: none; }
+    #error-404 .btn-goBack .goBack-link {
+      display: inline-block;
+      color: black;
+      padding: 1rem 3rem;
+      background-color: lightgreen;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1rem; }
+      #error-404 .btn-goBack .goBack-link:hover {
+        box-shadow: 0.1rem 0.1rem 0.8rem darkgrey; }
+
+#single-cocktail {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #single-cocktail .single-cocktail-card {
+    display: flex;
+    margin: 6rem 0;
+    width: 80rem;
+    justify-content: space-between; }
+    #single-cocktail .single-cocktail-card .single-cocktail-image {
+      width: 40rem; }
+      #single-cocktail .single-cocktail-card .single-cocktail-image img {
+        width: 100%;
+        display: block; }
+    #single-cocktail .single-cocktail-card .single-cocktail-info .single-cocktail-instructions {
+      margin-bottom: 1rem; }
+      #single-cocktail .single-cocktail-card .single-cocktail-info .single-cocktail-instructions .instructions-heading {
+        font-size: 1.5rem;
+        font-family: "Merriweather";
+        margin-bottom: 1rem; }
+      #single-cocktail .single-cocktail-card .single-cocktail-info .single-cocktail-instructions .instructions-content {
+        font-size: 1.4rem;
+        width: 60%; }
+    #single-cocktail .single-cocktail-card .single-cocktail-info .single-cocktail-heading {
+      font-size: 2.5rem;
+      font-family: "Merriweather";
+      margin-bottom: 1rem; }
+    #single-cocktail .single-cocktail-card .single-cocktail-info .single-cocktail-category {
+      background-color: lightgreen;
+      display: inline-block;
+      padding: 0.6rem 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      font-family: "Merriweather"; }
+    #single-cocktail .single-cocktail-card .single-cocktail-info .ingredients-heading {
+      font-size: 1.5rem;
+      font-family: "Merriweather";
+      margin-bottom: 1rem; }
+    #single-cocktail .single-cocktail-card .single-cocktail-info ul {
+      list-style: none;
+      font-size: 1.4rem; }
