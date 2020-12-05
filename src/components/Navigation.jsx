@@ -6,10 +6,11 @@ export const Navbar = () => {
     <header>
       <nav className="main-navigation">
         <figure className="navigation-icon">
-          <img
-            src="https://www.pngitem.com/pimgs/m/50-502197_this-is-an-icon-for-a-cocktail-cocktail.png"
-            alt="cocktail icon"
-          />
+          <Link className="navigation-link" to="/">
+            <h3 className="navigation-name">
+              The Cocktail<span className="navigation-name-DB">DB</span>
+            </h3>
+          </Link>
         </figure>
         <ul>
           <li>

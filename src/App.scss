@@ -21,10 +21,17 @@ header {
     align-items: center;
     justify-content: space-evenly;
     & .navigation-icon {
-      width: 5rem;
-      & img {
-        width: 100%;
-        display: block;
+      font-family: "Merriweather";
+      font-size: 2.2rem;
+      & .navigation-link {
+        text-decoration: none;
+        color: black;
+      }
+      & .navigation-name {
+        & .navigation-name-DB {
+          color: green;
+          margin-left: 0.2rem;
+        }
       }
     }
     & ul {
@@ -110,26 +117,41 @@ footer {
     }
     & .cocktail-info {
       padding: 1rem;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       & .cocktail-title {
         font-size: 2rem;
         margin-bottom: 1rem;
       }
       & .cocktail-category {
         background-color: lightgreen;
-        display: inline-block;
         padding: 0.6rem 0.5rem;
         margin-bottom: 1rem;
         border-radius: 1rem;
         font-family: "Merriweather";
+        align-self: flex-start;
       }
       & .cocktal-instructions {
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        & .readMore-btn {
+          background: 0;
+          color: blue;
+          border: 0;
+          outline: 0;
+          cursor: pointer;
+          & .readMore-link {
+            text-decoration: none;
+          }
+        }
       }
       & .cocktail-details {
         border: none;
         background: none;
         outline: none;
+        align-self: flex-start;
         & .btn-link {
           display: inline-block;
           color: black;
