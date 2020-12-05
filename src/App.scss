@@ -230,17 +230,38 @@ footer {
   align-items: center;
   & .single-cocktail-card {
     display: flex;
-    margin: 6rem 0;
-    width: 80rem;
-    justify-content: space-between;
+    margin: 6rem auto;
+    align-items: center;
+    width: 90rem;
     & .single-cocktail-image {
-      width: 40rem;
+      width: 50%;
       & img {
         width: 100%;
         display: block;
       }
     }
     & .single-cocktail-info {
+      width: 50%;
+      margin-left: 3rem;
+      align-self: flex-start;
+      & .btn-goBack {
+        border: none;
+        background: none;
+        outline: none;
+        margin-top: 3rem;
+        & .goBack-link {
+          display: inline-block;
+          color: black;
+          padding: 1rem 3rem;
+          background-color: lightgreen;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 1rem;
+          &:hover {
+            box-shadow: 0.1rem 0.1rem 0.8rem darkgrey;
+          }
+        }
+      }
       & .single-cocktail-instructions {
         margin-bottom: 1rem;
         & .instructions-heading {
@@ -274,6 +295,26 @@ footer {
       & ul {
         list-style: none;
         font-size: 1.4rem;
+        display: inline-flex;
+        flex-direction: column;
+        & li {
+          display: inline-flex;
+          align-items: center;
+          margin: 0.5rem 0;
+          &:hover .ingredient-content {
+            transform: translateX(25%);
+          }
+          &:hover .fa-chevron-right {
+            transform: translateX(-50%);
+          }
+          & .fa-chevron-right {
+            color: lightgreen;
+            transition: 0.3s all;
+          }
+          & .ingredient-content {
+            transition: 0.3s all;
+          }
+        }
       }
     }
   }

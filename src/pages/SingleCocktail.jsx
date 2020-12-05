@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Loading } from "../components/Loading";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
@@ -80,10 +82,20 @@ export const SingleCocktail = () => {
             <h3 className="ingredients-heading">Ingredients:</h3>
             <ul>
               {ingList.map((i, index) => {
-                return i ? <li key={index}>{i}</li> : null;
+                return i ? (
+                  <li key={index}>
+                    <FaChevronRight className="fa-chevron-right" />
+                    <span className="ingredient-content">{i}</span>
+                  </li>
+                ) : null;
               })}
             </ul>
           </div>
+          <button className="btn-goBack">
+            <Link to="/" className="goBack-link">
+              go back
+            </Link>
+          </button>
         </div>
       </div>
     </section>
